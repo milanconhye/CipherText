@@ -1,0 +1,164 @@
+/*
+-------------------------------------------------
+|   Created by Milan Conhye                     |
+|   University of Greenwich                     |
+|                                               |
+|   Website: www.milanconhye.com                |
+|   GitHub: https://github.com/milanconhye      |
+|                                               |
+-------------------------------------------------
+*/
+
+/* Root of Tab Pane */
+.root .tab-pane {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Header Color - Tab and TabPane Properties */
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #3f3f46;
+    -fx-opacity: 100;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab {
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: #3f3f46;
+
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #2d2d30;
+}
+
+/* Setting Tab Labels */
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #C5AE87;
+}
+
+/* Tab Content - Main and Labels */
+
+.tab-content-area {
+    -fx-background-color: #2d2d30;
+}
+
+.tab-content-area .label {
+    -fx-text-fill: #C5AE87;
+}
+
+/* Tab Content - ComboBox */
+
+.tab-content-area .choice-box {
+    -fx-background-color: #3f3f46;
+    -fx-mark-color: #C5AE87;
+}
+
+.tab-content-area .choice-box .menu-item {
+    -fx-background-color: #3f3f46;
+}
+
+.tab-content-area .choice-box .menu-item:focused {
+    -fx-background-color: #2d2d30;
+}
+
+.tab-content-area .context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #3f3f46;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}
+
+/* Tab Content - Text Area and Text Field */
+
+
+.tab-content-area .text-area {
+    -fx-background-insets: 0;
+    -fx-text-fill: #C5AE87;
+    -fx-background-color: transparent, transparent, transparent, transparent;
+}
+
+.tab-content-area .text-area .content {
+    -fx-background-color: transparent, #C5AE87, transparent, #3f3f46;
+}
+
+.tab-content-area .text-area:focused .content {
+    -fx-background-color: transparent, #3f3f46, transparent, #3f3f46;
+}
+
+.tab-content-area .text-area .content .scroll-bar {
+    -fx-fill: #C5AE87;
+}
+
+.tab-content-area .text-area:focused {
+    -fx-text-fill: #C5AE87;
+    -fx-highlight-fill: #2d2d30;
+    -fx-highlight-text-fill: #C5AE87;
+}
+
+.tab-content-area .text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: #C5AE87;
+}
+
+
+.tab-content-area .text-field {
+    -fx-background-color: #3f3f46;
+    -fx-text-fill: #C5AE87;
+}
+
+/* Tab Content - Button */
+
+.tab-content-area .button {
+    -fx-background-color: #3f3f46;
+    -fx-text-fill: #C5AE87;
+}
+
+/* Tab Content - Links */
+
+.tab-content-area .hyperlink {
+    -fx-text-fill: #C5AE87;
+}
+
+.tab-content-area .hyperlink:hover {
+    -fx-text-fill: grey;
+}
+
+.tab-content-area .hyperlink:visited {
+    -fx-text-fill: #C5AE87;
+}
+
+
+/* OUTPUT BOX and MESSAGE BOXES*/
+
+.root {
+    -fx-background-color: #2d2d30;
+}
+
+.label {
+    -fx-text-fill: #C5AE87;
+}
+
+.button {
+    -fx-background-color: #3f3f46;
+    -fx-text-fill: #C5AE87;
+}
