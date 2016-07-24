@@ -1,18 +1,21 @@
 # CipherText v2.4
-Cipher and Decipher Text using JavaFX 
+Cipher and Decipher Text using JavaFX
 
-Requirements: Any Desktop Operating System which has the support of JVM (Java Virtual Machine) and JDK (Java Development Kit) when editing these files. 
+<h2><b>License</b></h2>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 <h2><b>Requirements and Notes</b></h2>
 
-The initial purpose of this project was to allow the user to cipher and decipher text.This Application 'CipherText' was created in JavaFX using 'IntelliJ IDEA' therefore when editing these files, you could use 'IntelliJ IDEA' to import the project folder or simply use your faviourte text editor - the java files can be found in the <b>/src/</b> folder. All code is open-source, but a reference to 'Milan Conhye' would be much appreciated. This program does not use the back bone of ciphering and deciphering text, instead uses the "javax.crypto" library to generate keys and securly encrypt and decrypt information. This program also includes a style sheets in order to further customise the program 
-All code in this program has been thoroughly commented in order to be understood and further extended. 
+The initial purpose of this project was to allow the user to cipher and decipher information. This Application 'CipherText' was created in JavaFX using 'IntelliJ IDEA', therefore when editing these files, you could use 'IntelliJ IDEA' to import the project folder or simply use your favorite text editor - the java files can be found in <b>/src/</b>. All code is open-source, but a reference to 'Milan Conhye' would be much appreciated. This program does not use the backbone of ciphering and deciphering, instead, uses the "javax.crypto" library to generate keys and securely encrypt and decrypt information. This program also includes a style sheet in order to further customize the program. All code in this program has been thoroughly commented in order to be understood and further extended. 
 
-It is recommended to install the "Java Cryptography Extension (JCE) unlimited strength jurisdiction policy files" - instructions can be found [here](http://suhothayan.blogspot.co.uk/2012/05/how-to-install-java-cryptography.html). This would allow you to use the stronger security to encrypt and decrypt files. However, if you are unable to install this, an enabler of this extention has been enabled within the main method of this program.
+It is recommended to install the "Java Cryptography Extension (JCE) unlimited strength jurisdiction policy files" - instructions can be found [here](http://suhothayan.blogspot.co.uk/2012/05/how-to-install-java-cryptography.html). This would allow you to use the stronger security to encrypt and decrypt files. However, if you are unable to install this, an enabler of this extension has been provided within the main method of this program.
+
+Basic Requirements: Any Desktop Operating System which has the support of JVM (Java Virtual Machine) and JDK (Java Development Kit) when editing these files.
 
 <h2><b>General Knowledge</b></h2>
 
-There are various encryption and decryption algorithms provided in this program. Each alogrithms provides various key strengths in order to correctly cipher the required informaion. The table below introduces the minimum and maximum bit sizes for the key strengths. Although this program limits the bit size, due to the complexity and confusion to the user, the minimum and maximum bit strength, should you have to change the bit sizes, has been organised within the Encryption() method of the program and within this table. 
+There are various encryption and decryption algorithms provided in this program. Each algorithm provides various key strengths in order to correctly cipher the required information. The table below introduces the minimum and maximum bit sizes for the key strengths. Although this program limits the bit size, due to the complexity and confusion to the user, the minimum and maximum bit strength, should you have to change the bit sizes, has been organized within the Encryption() method of the program and of course within this table. 
 
 Algorithm Type                                  | Allowances (bits)
 -------------                                   | -------------
@@ -25,12 +28,24 @@ DESEDE                                          | 122 or 168 exactly
 
 <h2>Operation</h2>
 
-<h4>Encrypt Text Tab</h4>
+<h4>Encrypt Text - Tab</h4>
 
-As seen in Figure 1, this 'CipherText' program features Choice boxes in order to choose the algorithm type and key strength, prevailing against any human error. The key strength sizes would depend on the chosen algorithm type and can vary between 56 and 1024 bits. Error prevention techniques are also contained in the encryption process, such as the 'Encrypt Message' text area cannot be null or empty. 
+As seen in Figure 1a, this 'CipherText' program features Choice boxes in order to choose the algorithm type and key strength, prevailing against any human error. The key strength sizes would depend on the chosen algorithm type and can vary between 56 and 1024 bits. An error prevention technique is also contained in the encryption process: 'Encrypt Message' text area cannot be null or empty. 
 
-<h4>Encrypt Text Output</h4>
+![Encrypt Text - Tab](/Screenshots/1.png?raw=true "Encrypt Text - Tab")
 
-Once the user has successfully...
+<h4>Encrypt Text - Output</h4>
 
+Once the user has chosen their algorithm type, key strength, entered the message or text that needs to be encrypted and have pressed the cipher button, they will be promoted a dialog which contains the information: original message, algorithm type, key strength, decryption key and encrypted message. This dialog also contains an 'Export Info' feature, whereby two separate files will be created on the desktop; one of them containing the algorithm type and decryption key, and the other containing the encrypted message. Figure 1b displays the output of the encryption process. 
 
+![Encrypt Text - Output](/Screenshots/2.png?raw=true "Encrypt Text - Output")
+
+<h4>Decrypt Text - Tab</h4>
+
+As seen in Figure 2, the decryption process requires the algorithm type which was used to encrypt the information - this is a first step security procedure. The next step is entering the encryption key and encrypted message; if one of these hex keys are incorrect, then the program would display an error. However, if all fields are substantially correct and the decipher button has been pressed, there deciphered message would be displayed on the encrypted message text area. 
+
+![Decrypt Text - Tab](/Screenshots/3.png?raw=true "Decrypt Text - Tab")
+
+<h2>Errors, Bugs and Feedback </h2>
+
+If you come across any of those nasty little things, would like to contribute some ideas towards this project or even if you need some guidance - please do leave a comment and I will try my best to respond as fast as possible. 
