@@ -30,7 +30,7 @@ DESEDE                                          | 122 or 168 exactly
 
 As seen in Figure 1a, this 'CipherText' program features Choice boxes in order to choose the algorithm type and key strength, prevailing against any human error. The key strength sizes would depend on the chosen algorithm type and can vary between 56 and 1024 bits. An error prevention technique is also contained in the encryption process: 'Encrypt Message' text area cannot be null or empty. 
 
-<i>Figure 1 - Encrypt Text</i>
+<i>Figure 1a - Encrypt Text</i>
 
 ![Encrypt Text - Tab](/Screenshots/1.png?raw=true "Encrypt Text - Tab")
 
@@ -38,7 +38,7 @@ As seen in Figure 1a, this 'CipherText' program features Choice boxes in order t
 
 Once the user has chosen their algorithm type, key strength, entered the message or text that needs to be encrypted and have pressed the cipher button, they will be promoted a dialog which contains the information: original message, algorithm type, key strength, decryption key and encrypted message. This dialog also contains an 'Export Info' feature, whereby two separate files will be created on the desktop; one of them containing the algorithm type and decryption key, and the other containing the encrypted message. Figure 1b displays the output of the encryption process. 
 
-<i>Figure 2 - Encrypted Text Output</i>
+<i>Figure 1b - Encrypted Text Output</i>
 
 ![Encrypt Text - Output](/Screenshots/2.png?raw=true "Encrypt Text - Output")
 
@@ -46,7 +46,7 @@ Once the user has chosen their algorithm type, key strength, entered the message
 
 As seen in Figure 2, the decryption process requires the algorithm type which was used to encrypt the information - this is a first step security procedure. The next step is entering the encryption key and encrypted message; if one of these hex keys are incorrect, then the program would display an error. However, if all fields are substantially correct and the decipher button has been pressed, there deciphered message would be displayed on the encrypted message text area. 
 
-<i>Figure 3 - Decrypt Text</i>
+<i>Figure 2 - Decrypt Text</i>
 
 ![Decrypt Text - Tab](/Screenshots/3.png?raw=true "Decrypt Text - Tab")
 
