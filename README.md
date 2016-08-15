@@ -1,9 +1,7 @@
 # CipherText v2.4
-Cipher and Decipher Text using JavaFX
+<i>Cipher and Decipher information, created using JavaFX.</i>
 
-<h2><b>License</b></h2>
-
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+With suitable and in good circumstances it is significant that the information you send and receive is protected. Cases such as sending someone your password or personal information - you wouldn't want someone to steal this information and use it against you right? CipherText allows you to encrypt and decrypt information using Symmetric-key algorithms; meaning that a key and the encrypted message is required to view your information. Depending on the encryption type and the key strength, your information wouldn't be worthwhile for hackers to obtain. 
 
 <h2><b>Requirements and Notes</b></h2>
 
@@ -32,11 +30,15 @@ DESEDE                                          | 122 or 168 exactly
 
 As seen in Figure 1a, this 'CipherText' program features Choice boxes in order to choose the algorithm type and key strength, prevailing against any human error. The key strength sizes would depend on the chosen algorithm type and can vary between 56 and 1024 bits. An error prevention technique is also contained in the encryption process: 'Encrypt Message' text area cannot be null or empty. 
 
+<i>Figure 1 - Encrypt Text</i>
+
 ![Encrypt Text - Tab](/Screenshots/1.png?raw=true "Encrypt Text - Tab")
 
 <h4>Encrypt Text - Output</h4>
 
 Once the user has chosen their algorithm type, key strength, entered the message or text that needs to be encrypted and have pressed the cipher button, they will be promoted a dialog which contains the information: original message, algorithm type, key strength, decryption key and encrypted message. This dialog also contains an 'Export Info' feature, whereby two separate files will be created on the desktop; one of them containing the algorithm type and decryption key, and the other containing the encrypted message. Figure 1b displays the output of the encryption process. 
+
+<i>Figure 2 - Encrypted Text Output</i>
 
 ![Encrypt Text - Output](/Screenshots/2.png?raw=true "Encrypt Text - Output")
 
@@ -44,8 +46,16 @@ Once the user has chosen their algorithm type, key strength, entered the message
 
 As seen in Figure 2, the decryption process requires the algorithm type which was used to encrypt the information - this is a first step security procedure. The next step is entering the encryption key and encrypted message; if one of these hex keys are incorrect, then the program would display an error. However, if all fields are substantially correct and the decipher button has been pressed, there deciphered message would be displayed on the encrypted message text area. 
 
+<i>Figure 3 - Decrypt Text</i>
+
 ![Decrypt Text - Tab](/Screenshots/3.png?raw=true "Decrypt Text - Tab")
 
 <h2>Errors, Bugs and Feedback </h2>
 
 If you come across any of those nasty little things, would like to contribute some ideas towards this project or even if you need some guidance - please do leave a comment and I will try my best to respond as fast as possible. 
+
+<h2>Licence and Agreement</h2>
+
+The software is provided "as is" and the author disclaims all warranties with regard to this software including all implied warranties of merchantability and fitness. This software in no way claims to fully protect the integrity of your information, instead it protects the naked information from the human eye and makes it harder for hackers to decrypt. In no event shall the author be liable for any special, direct, indirect, or consequential damages or any damages whatsoever resulting from loss of use, data or profits, whether in an action of contract, negligence or other tortious action, arising out of or in connection with the use or performance of this software. Please acknowledge and agree to this agreement before downloading and using this software. 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
