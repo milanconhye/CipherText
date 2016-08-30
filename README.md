@@ -1,4 +1,4 @@
-# CipherText v2.4
+#CipherText v2.4
 <i>Cipher and Decipher information, created using JavaFX.</i>
 
 With suitable and in good circumstances it is significant that the information you send and receive is protected. Cases such as sending someone your password or personal information - you wouldn't want someone to steal this information and use it against you right? CipherText allows you to encrypt and decrypt information using Symmetric-key algorithms; meaning that a key and the encrypted message is required to view your information. Depending on the encryption type and the key strength, your information wouldn't be worthwhile for hackers to obtain. 
