@@ -3,7 +3,7 @@
 
 With suitable and in good circumstances it is significant that the information you send and receive is protected. Cases such as sending someone your password or personal information - you wouldn't want someone to steal this information and use it against you right? CipherText allows you to encrypt and decrypt information using Symmetric-key algorithms; meaning that a key and the encrypted message is required to view your information. Depending on the encryption type and the key strength, your information wouldn't be worthwhile for hackers to obtain. 
 
-<h2><b>Requirements and Notes</b></h2>
+<h2>Requirements and Notes</h2>
 
 The initial purpose of this project was to allow the user to cipher and decipher information. This Application 'CipherText' was created in JavaFX using 'IntelliJ IDEA', therefore when editing these files, you could use 'IntelliJ IDEA' to import the project folder or simply use your favorite text editor - the java files can be found in <b>/src/</b>. All code is open-source, but a reference to 'Milan Conhye' would be much appreciated. This program does not use the backbone of ciphering and deciphering, instead, uses the "javax.crypto" library to generate keys and securely encrypt and decrypt information. This program also includes a style sheet in order to further customize the program. All code in this program has been thoroughly commented in order to be understood and further extended. 
 
@@ -11,7 +11,7 @@ It is recommended to install the "Java Cryptography Extension (JCE) unlimited st
 
 Basic Requirements: Any Desktop Operating System which has the support of JVM (Java Virtual Machine) and JDK (Java Development Kit) when editing these files.
 
-<h2><b>General Knowledge</b></h2>
+<h2>General Knowledge</h2>
 
 There are various encryption and decryption algorithms provided in this program. Each algorithm provides various key strengths in order to correctly cipher the required information. The table below introduces the minimum and maximum bit sizes for the key strengths. Although this program limits the bit size, due to the complexity and confusion to the user, the minimum and maximum bit strength, should you have to change the bit sizes, has been organized within the Encryption() method of the program and of course within this table. 
 
